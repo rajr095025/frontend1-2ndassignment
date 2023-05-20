@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div style="color: white;">
+        Library System
+      </div>
+      <div>
+        <ul>
+          <li><a href="#books">Books</a></li>
+          <li><a href="#register">Register</a></li>
+          <li><a href="#register">Contact Us</a></li>
+          <li><a href="#register">Logout</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="books">
+      <h2>Books</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Book ID</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Genre</th>
+            <th>Availability</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>
+              <table class="nested-table">
+              <a href="http://" target="_blank" rel="noopener noreferrer">Book Title 1</a>
+                <tr>
+                  <td>Publication Date:</td>
+                  <td>May 2020</td>
+                </tr>
+                <tr>
+                  <td>Page Count:</td>
+                  <td>250</td>
+                </tr>
+                <tr>
+                  <td>ISBN:</td>
+                  <td>978-1234567890</td>
+                </tr>
+              </table>
+            </td>
+            <td>John Doe</td>
+            <td>Mystery</td>
+            <td>Available</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>
+              <a href="http://" target="_blank" rel="noopener noreferrer">Book Title 2</a>
+              <table class="nested-table">
+                <tr>
+                  <td>Publication Date:</td>
+                  <td>May 2020</td>
+                </tr>
+                <tr>
+                  <td>Page Count:</td>
+                  <td>250</td>
+                </tr>
+                <tr>
+                  <td>ISBN:</td>
+                  <td>978-1234567890</td>
+                </tr>
+              </table>
+            </td>
+            <td>John Doe</td>
+            <td>Mystery</td>
+            <td>Available</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>
+              <a href="http://" target="_blank" rel="noopener noreferrer">Book Title 3</a>
+              <table class="nested-table">
+                <tr>
+                  <td>Publication Date:</td>
+                  <td>May 2020</td>
+                </tr>
+                <tr>
+                  <td>Page Count:</td>
+                  <td>250</td>
+                </tr>
+                <tr>
+                  <td>ISBN:</td>
+                  <td>978-1234567890</td>
+                </tr>
+              </table>
+            </td>
+            <td>John Doe</td>
+            <td>Mystery</td>
+            <td>Available</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="register">
+      <h2>Registration Form</h2>
+      <form>
+        <div class="form-group">
+          <label for="first-name">First Name:</label>
+          <input type="text" id="first-name" name="first-name" required>
+        </div>
+        <div class="form-group">
+          <label for="last-name">Last Name:</label>
+          <input type="text" id="last-name" name="last-name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="date-of-birth">Date of Birth:</label>
+          <input type="date" id="date-of-birth" name="date-of-birth" required>
+        </div>
+        <div class="form-group">
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" min="5" max="100" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <div class="form-group">
+          <label for="confirm-password">Confirm Password:</label>
+          <input type="password" id="confirm-password" name="confirm-password" required>
+        </div>
+        <button type="submit">Register</button>
+      </form>
+    </section>
+  </main>
+</body>
+
+</html>
